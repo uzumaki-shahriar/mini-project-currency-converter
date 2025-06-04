@@ -69,6 +69,7 @@ convertButton.addEventListener("click", async (e) =>{
             return;
         }
         result.value = (amount * rate).toFixed(2);
+        result.focus();
     } catch (err) {
         result.value = "Conversion error!";
         console.error(err);

@@ -202,4 +202,10 @@ select option{
     transform: scale(0.97);
 }
 
+#result:focus{
+    border: 1.5px solid;
+    border-color: #29335C !important;
+    background: #F3F7F0 !important;
+}
+
 
