@@ -169,6 +169,13 @@ select option{
 }
 
 
+.buttons button:active {
+    background: #29335C;
+    color: #F7F7FF;
+    transform: scale(0.97);
+    /* Any other styles for pressed state */
+}
+
 
 #convert_button{
     display: flex;
