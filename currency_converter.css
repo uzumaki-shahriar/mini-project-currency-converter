@@ -169,13 +169,6 @@ select option{
 }
 
 
-.buttons button:active {
-    background: #29335C;
-    color: #F7F7FF;
-    transform: scale(0.97);
-    /* Any other styles for pressed state */
-}
-
 
 #convert_button{
     display: flex;
@@ -187,11 +180,11 @@ select option{
 
 
 
-.buttons button:hover{
+/* .buttons button:hover{
     background: #F7F7FF;
     color: #29335C;
     box-shadow: 0 0 0 4px #e0fbfc66, rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
+} */
 
 .buttons button i,
 #convert_button i {
@@ -215,4 +208,14 @@ select option{
     background: #F3F7F0 !important;
 }
 
-
+@media (hover: hover) and (pointer: fine) {
+  .buttons button:hover {
+    background: #F7F7FF;
+    color: #29335C;
+    box-shadow: 0 0 0 4px #e0fbfc66, rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .buttons button:hover i,
+  #convert_button:hover i {
+    transform: rotate(180deg);
+  }
+}
