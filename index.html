@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency_converter.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="">
+            <h1>Currency Converter</h1>
+            <div class="currency_input_container">
+                <label for="amount">Enter amount to convert</label>
+                <input type="number" id="amount" name="amount" required>
+                <span id="amount_error"></span>
+            </div>
+            <div class="currency_dropdown">
+                <div class="from">
+                    <p>From</p>
+                        <div class="select_container">
+                            <img src="https://flagsapi.com/BD/shiny/64.png" alt="">
+                            <select id="from_currency" name="from_currency" required>
+                                
+                            </select>
+                        </div>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select_container">
+                        <img src="https://flagsapi.com/BD/shiny/64.png" alt="">
+                        <select id="to_currency" name="to_currency" required>
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="currency_result">
+                <div class="result_container">
+                    <label for="result">Converted Amount</label>
+                    <input type="text" id="result" name="result" readonly>
+                </div>
+                <div class="buttons">
+                    <button type="submit" id="convert_button">
+                        <span>Convert</span>
+                        <i class="fa-solid fa-right-left"></i>
+                    </button>
+
+                    <button type="reset" id="reset_button">Reset
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="currency_converter.js"></script>
+</body>
+
+</html>
